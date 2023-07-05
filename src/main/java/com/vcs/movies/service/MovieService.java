@@ -22,4 +22,7 @@ public class MovieService {
         return movieRepository.findById(id).get();
     }
 
+    public Movie singleMovieByImdbId(String imdbId) {
+        return movieRepository.findByImdbId(imdbId);
+    }
 }
